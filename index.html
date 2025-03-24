@@ -1,22 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="si">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Mode Toggle</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GCE O/L Science Quiz</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Premium Website</h1>
-            <button id="theme-toggle">Toggle Dark Mode</button>
-        </header>
-        <main>
-            <p>Welcome to our premium website! Enjoy the sleek design and smooth user experience.</p>
-        </main>
+  <div class="container">
+    <div class="daynight">
+      <label for="checkbox">
+        <input type="checkbox" id="checkbox">
+        <div class="toggle">
+          <div class="cloud"></div>
+          <div class="star"></div>
+          <div class="sea"></div>
+          <div class="mountains"></div>
+        </div>
+      </label>
     </div>
-
-    <script src="script.js"></script>
+  </div>
+  <div class="quiz-container">
+    <h1>GCE O/L Science Quiz</h1>
+    <select id="year-select">
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <option value="2024">2024</option>
+      <option value="2025">2025</option>
+    </select>
+    <button id="start-quiz">Start Quiz</button>
+    <div class="progress-bar">
+      <div id="progress"></div>
+    </div>
+    <div id="timer">Time Left: 01:00:00</div>
+    <div id="quiz"></div>
+    <div class="navigation-buttons">
+      <button id="previous">⬅️ Previous</button>
+      <button id="next">Next ➡️</button>
+    </div>
+    <button id="submit">Submit Quiz</button>
+    <div id="results"></div>
+    <div id="score-summary"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
